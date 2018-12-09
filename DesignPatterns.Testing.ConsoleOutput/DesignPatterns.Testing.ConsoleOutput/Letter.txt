@@ -1,0 +1,10 @@
+﻿[Street Address]
+[City], [State], [Zip Code]
+
+Hello [Addressee],
+
+We are very interested in [Company Name] and the products you have to offer. We would like to purchase the following items for the following prices per unit
+
+[Products]
+
+Please let us know if these prices are amicable.
