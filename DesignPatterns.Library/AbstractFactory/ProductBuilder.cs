@@ -5,7 +5,7 @@ namespace DesignPatterns.Library.AbstractFactory
 {
     public class ProductBuilder
     {
-        public ProductModel CreateProduction(IProductFactory productFactory)
+        public ProductModel CreateProduct(IProductFactory productFactory)
         {
             ProductModel ProductModel = productFactory.MakeProduct();
             WidgetModel Widget1 = productFactory.MakeWidget(WidgetShape.Square, WidgetColor.Gray, WidgetSize.Large);

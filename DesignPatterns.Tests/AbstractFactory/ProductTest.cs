@@ -21,7 +21,7 @@ namespace DesignPatterns.Tests.AbstractFactory
             public void ReturnTrueIfProductIsSetUpCorrectly()
             {
                 ProductAFactory l_ProductFactory = new ProductAFactory();
-                ProductModel ProductModel = _ProductBuilder.CreateProduction(l_ProductFactory);
+                ProductModel ProductModel = _ProductBuilder.CreateProduct(l_ProductFactory);
 
                 Assert.IsTrue(ProductModel.Widgets.Count == 2);
 
@@ -43,7 +43,7 @@ namespace DesignPatterns.Tests.AbstractFactory
             public void ReturnTrueIfProductBIsSetUpCorrectly()
             {
                 ProductBFactory l_ProductFactory = new ProductBFactory();
-                ProductModel ProductModel = _ProductBuilder.CreateProduction(l_ProductFactory);
+                ProductModel ProductModel = _ProductBuilder.CreateProduct(l_ProductFactory);
 
                 Assert.IsTrue(ProductModel.Widgets.Count == 2);
 
