@@ -3,3 +3,7 @@ This project is for setting up different design patterns while implementing prop
 
 
 Please feel free to give me feedback if I am doing something incorrectly or if you have a better approach.
+
+Patterns Implemented:
+- Abstract Factory
+- Strategy
