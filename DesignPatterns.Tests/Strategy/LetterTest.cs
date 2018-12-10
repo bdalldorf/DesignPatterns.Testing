@@ -19,15 +19,15 @@ namespace DesignPatterns.Tests.Strategy
             [TestCase(Company.Baz)]
             public void ReturnFalseIfTheTextDoesntContainTemplateFields(Company value)
             {
-                string l_LetterText = CreateLetter.GenerateCustomLetter("../../../../DesignPatterns.Library/Strategy/Letter.txt", value);
+                string LetterText = CreateLetter.GenerateCustomLetter("../../../../DesignPatterns.Library/Strategy/Letter.txt", value);
 
-                Assert.True(l_LetterText.Length > 0);
+                Assert.True(LetterText.Length > 0);
 
                 Type Type = typeof(TemplateFields);
                 foreach (var Field in Type.GetFields(System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public))
                 {
                     var Value = Field.GetValue(null);
-                    Assert.False(l_LetterText.Contains(Value.ToString()));
+                    Assert.False(LetterText.Contains(Value.ToString()));
                 }
             }
         }
