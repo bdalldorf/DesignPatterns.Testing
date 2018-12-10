@@ -28,9 +28,9 @@ namespace DesignPatterns.Tests.Strategy
 
                 LetterText = CreateLetter.GenerateCustomLetter(FilePath, company);
 
-                foreach (var Field in TemplateFieldType.GetFields(System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public))
+                foreach (FieldInfo Field in TemplateFieldType.GetFields(System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public))
                 {
-                    var Value = Field.GetValue(null);
+                    Object Value = Field.GetValue(null);
                     Assert.False(LetterText.Contains(Value.ToString()));
                 }
             }
