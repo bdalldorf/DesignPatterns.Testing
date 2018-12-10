@@ -23,7 +23,7 @@ namespace DesignPatterns.Tests.Strategy
 
                 Assert.True(l_LetterText.Length > 0);
 
-                Type Type = typeof(FileFields);
+                Type Type = typeof(TemplateFields);
                 foreach (var Field in Type.GetFields(System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public))
                 {
                     var Value = Field.GetValue(null);

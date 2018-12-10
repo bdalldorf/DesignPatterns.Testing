@@ -25,32 +25,32 @@ namespace DesignPatterns.Library.Strategy.Strategies
 
         public void CompanyName()
         {
-            LetterText = LetterText.Replace(FileFields.CompanyName, "Foo Incorporated");
+            LetterText = LetterText.Replace(TemplateFields.CompanyName, "Foo Incorporated");
         }
 
         public void Addressee()
         {
-            LetterText = LetterText.Replace(FileFields.Addressee, "Mr. Foo");
+            LetterText = LetterText.Replace(TemplateFields.Addressee, "Mr. Foo");
         }
 
         public void CompanyCityAddress()
         {
-            LetterText = LetterText.Replace(FileFields.CompanyCityAddress, "Foo Town");
+            LetterText = LetterText.Replace(TemplateFields.CompanyCityAddress, "Foo Town");
         }
 
         public void CompanyStateAddress()
         {
-            LetterText = LetterText.Replace(FileFields.CompanyStateAddress, "CA");
+            LetterText = LetterText.Replace(TemplateFields.CompanyStateAddress, "CA");
         }
 
         public void CompanyStreetAddress()
         {
-            LetterText = LetterText.Replace(FileFields.CompanyStreetAddress, "123 Foo Ave.");
+            LetterText = LetterText.Replace(TemplateFields.CompanyStreetAddress, "123 Foo Ave.");
         }
 
         public void CompanyZipCode()
         {
-            LetterText = LetterText.Replace(FileFields.CompanyZipCode, "95641");
+            LetterText = LetterText.Replace(TemplateFields.CompanyZipCode, "95641");
         }
 
         public void CompanyProducts(List<CompanyProductModel> products)
@@ -64,7 +64,7 @@ namespace DesignPatterns.Library.Strategy.Strategies
                 l_StringBuilder.AppendLine($"\\u {CompanyProduct.Name}: ${CompanyProduct.Price}");
             }
 
-            LetterText = LetterText.Replace(FileFields.ProductsOffered, l_StringBuilder.ToString());
+            LetterText = LetterText.Replace(TemplateFields.ProductsOffered, l_StringBuilder.ToString());
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesignPatterns.Library.Strategy
 {
-    public static class FileFields
+    public static class TemplateFields
     {
         public static string CompanyName = "[Company Name]";
         public static string Addressee = "[Addressee]";
