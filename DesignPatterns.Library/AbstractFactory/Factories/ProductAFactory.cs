@@ -40,7 +40,7 @@ namespace DesignPatterns.Library.AbstractFactory.Factories
 
         public WidgetModel MakeWidget(WidgetShape widgetShape, WidgetColor widgetColor, WidgetSize widgetSize)
         {
-            return new WidgetModel()
+            return new WidgetAModel()
             {
                 ID = Guid.NewGuid(),
                 WidgetShape = widgetShape,
